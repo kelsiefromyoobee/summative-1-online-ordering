@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #F0F2EF;
 }
 h1{
     margin: 0;
@@ -91,4 +92,45 @@ padding: 50px 0px;
 .monarch a{
     text-decoration: none;
     color: #F0F2EF;
+}
+/* page 3 */
+.flex-consistent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 20px;
+}
+.back-button{
+    /* justify-content: flex-start; */
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 5px;
+   font-family: 'Quicksand', sans-serif;
+}
+
+.logo-brand img{
+    max-width: 150px;
+    
+}
+
+.eng-dropdown{
+    background-color: #810505;
+    border-radius: 10px;
+    border: #D4AF37 1px solid;
+    padding: 2px 3px !important;
+    height: 20px;
+}
+.eng-lang{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
 }
