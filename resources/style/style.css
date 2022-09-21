@@ -1,23 +1,24 @@
+/* css reset */
 body{
     margin: 0;
     background-color: #F0F2EF;
 }
 h1{
-    margin: 0;
+    
 font-family: 'Quicksand', sans-serif;
 font-weight: 700;
 }
 h2{
-    margin: 0;
+    
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
 }
 p{
-    margin: 0;
+    
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
 }
-
+/* start page */
 .img-wrapper{
     background-image: url(../images/king-of-snake-main-pic.jpg);
     height: 100vh;
@@ -133,4 +134,81 @@ padding: 50px 0px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
     font-size: 14px;
+}
+
+.breadcrumb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    /* align-items: flex-start; */
+    gap: 10px;
+    margin-left: 32px;
+    margin-top: 15px;
+    color: black;
+}
+
+.breadcrumb li{
+    list-style: none;
+    font-family: 'Quicksand', sans-serif ;
+    font-weight: 500;
+   
+    
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: black;
+}
+.current{
+    font-weight: 700 !important;
+}
+/* menu select */
+.menu-header{
+
+    text-align: center;
+
+}
+.menu-select-lunch{
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.7)) ,url("../images/kos-default.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.menu-select-dinner{
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.7)) ,url("../images/kos-dinner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.menu-select-desserts{
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.873)) ,url("../images/kos-dessert.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.menu-blurb{
+    color: #F0F2EF;
+    text-align: center;
+    padding: 25px 0;
+}
+.option-b{
+    text-align: center;
+}
+
+.monarch-option{
+    text-align: center;
+    border-radius: 10px;
+    border: #810505 5px solid;
+    margin: 0 100px;
 }
