@@ -1,0 +1,409 @@
+/* css reset */
+@font-face {
+    font-family: Quicksand;
+    src: url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap);
+}
+$h1_dimension: 24px;
+$h2_dimension: 20px;
+$h3_dimension: 16px;
+$p_dimension: 12px;
+
+@mixin h1-main-white {
+    font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        font-size: $h1_dimension;
+        color: #F0F2EF;
+}
+@mixin h1-main-black {
+    font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        font-size: $h1_dimension;
+        color: black;
+}
+@mixin h2-white{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: $h2_dimension;
+
+    color: #F0F2EF;
+}
+@mixin h2-black{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: $h2_dimension;
+    color: black;
+}
+@mixin h3-white {
+   
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        font-size: $h3_dimension;
+        color: #F0F2EF;
+    
+}
+@mixin h3-black {
+   
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: $h3_dimension;
+    color: black;
+
+}
+@mixin p-white {
+   
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: $p_dimension;
+    color: #F0F2EF;
+
+}
+@mixin p-black {
+   
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: $p_dimension;
+    color: black
+}
+
+body{
+    margin: 0;
+    background-color: #F0F2EF;
+}
+
+/* start page */
+.img-wrapper{
+    background-image: url(../images/king-of-snake-main-pic.jpg);
+    height: 100vh;
+    /* width: 100%; */
+    /* background-position: top 0 left 0; */
+    background-repeat: no-repeat;
+    object-fit: cover;
+    
+}
+.logo-vid{
+width: 100%;
+text-align: center;
+padding: 50px 0px;
+}
+.logo-vid img{
+    width: 250px;
+    height: 250px;
+}
+.button-parent{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* flex-direction: column; */
+    padding-top: 50px;
+    justify-content: space-evenly;
+}
+.button{
+   h1{
+    @include h1-main-white();
+    margin: 0;
+   }
+   a{
+    text-decoration: none;
+   }
+    background-color: #810505;
+    min-width: 372px;
+    max-height: 25px;
+    border-radius: 10px;
+    margin: 45px;
+    padding: 35px 20px;
+    
+}
+
+
+/* page2 */
+.welcome{
+
+    color: #F0F2EF;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    padding: 50px 0;
+}
+.subhead{
+    h2{
+        @include h2-white();
+        text-align: center;
+        padding: 50px 0;
+    }
+    
+    background-color: #003844;
+    
+}
+.monarch{
+    h1{
+        @include h1-main-white();
+        margin: 0;
+        
+    }
+    background-color: #561C72;
+    width: 372px;
+    /* height: 92px; */
+    max-height: 25px;
+    border-radius: 10px;
+    margin: 45px;
+    padding: 35px 20px;
+    a{
+        text-decoration: none;
+    }
+   
+}
+
+/* page 3 */
+.flex-consistent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 20px;
+}
+.back-button{
+    /* justify-content: flex-start; */
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 5px;
+   font-family: 'Quicksand', sans-serif;
+}
+
+.logo-brand img{
+    max-width: 150px;
+    
+}
+
+.eng-dropdown{
+    background-color: #810505;
+    border-radius: 10px;
+    border: #D4AF37 1px solid;
+    padding: 2px 3px !important;
+    height: 20px;
+}
+.eng-lang{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.breadcrumb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    /* align-items: flex-start; */
+    gap: 10px;
+    margin-left: 32px;
+    margin-top: 15px;
+    color: black;
+}
+
+.breadcrumb li{
+    list-style: none;
+    font-family: 'Quicksand', sans-serif ;
+    font-weight: 500;
+   
+    
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: black;
+}
+.current{
+    font-weight: 700 !important;
+}
+/* menu select */
+
+.menu-header{
+    h1{
+    @include h1-main-black();
+    text-align: center;
+    }
+}
+
+.menu-select-lunch{
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.7)) ,url("../images/kos-default.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+    h2{
+        @include h2-white();
+        text-align: center
+    }
+    p{
+        @include p-white();
+        text-align: center;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+.menu-select-dinner{
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.7)) ,url("../images/kos-dinner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+    h2{
+        @include h2-white();
+        text-align: center
+    }
+    p{
+        @include p-white();
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.menu-select-desserts{
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.873)) ,url("../images/kos-dessert.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    h2{
+        @include h2-white();
+        text-align: center;
+    }
+    p{
+        @include p-white();
+        text-align: center;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+.menu-blurb{
+    padding: 25px 0;
+}
+.groupped{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 7px;
+}
+.option-b{
+    p{
+        @include p-black();
+        text-align: center;
+    }
+    
+  
+}
+
+.monarch-option{
+    h2{
+        @include h2-black();
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+    }
+    border-radius: 10px;
+    border: #810505 5px solid;
+    max-width: 250px;
+    align-items: center;
+    padding: 0 32px;
+}
+
+/* page 4 */
+.lunch-heading{
+    h1{
+        @include h1-main-black();
+        text-align: center;
+    }
+    
+}
+.menu-headings-parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menu-headings{
+    h2{
+        @include h2-white();
+        text-align: center;
+        margin: 0;
+        padding: 5px 150px;
+    }
+    background-color: #003844;
+    border-radius: 10px;
+    color: #F0F2EF;
+    max-width: 420px;
+}
+.flex-food-container{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 316px;
+    background-color: #810505;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    h2{
+        @include h2-white();
+        margin: 10px;
+        text-align: center;
+    }
+    p{
+        @include p-white();
+        margin: 10px;
+        text-align: center;
+        max-height: 460px;
+    }
+    h3{
+        @include h3-white();
+        margin: 10px;
+        text-align: center;
+    }
+}
+.food-wrapper{
+    flex: 1;
+    max-height: 253px;
+}
+.food-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.price-and-quantity{
+    display: flex;
+    justify-content:space-between;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}

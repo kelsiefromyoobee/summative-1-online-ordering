@@ -1,4 +1,399 @@
-/*# sourceMappingURL=sass_style.css.map */
-.img-wrapper{
-    background-image: url(../images/king-of-snake-main-pic.webp);
+/* css reset */
+@font-face {
+  font-family: Quicksand;
+  src: url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap);
 }
+body {
+  margin: 0;
+  background-color: #F0F2EF;
+}
+
+/* start page */
+.img-wrapper {
+  background-image: url(../images/king-of-snake-main-pic.jpg);
+  height: 100vh;
+  /* width: 100%; */
+  /* background-position: top 0 left 0; */
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.logo-vid {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.logo-vid img {
+  width: 250px;
+  height: 250px;
+}
+
+.button-parent {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* flex-direction: column; */
+  padding-top: 50px;
+  justify-content: space-evenly;
+}
+
+.button {
+  background-color: #810505;
+  min-width: 372px;
+  max-height: 25px;
+  border-radius: 10px;
+  margin: 45px;
+  padding: 35px 20px;
+}
+.button h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #F0F2EF;
+  margin: 0;
+}
+.button a {
+  text-decoration: none;
+}
+
+/* page2 */
+.welcome {
+  color: #F0F2EF;
+  font-family: "Quicksand", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.subhead {
+  background-color: #003844;
+}
+.subhead h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #F0F2EF;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.monarch {
+  background-color: #561C72;
+  width: 372px;
+  /* height: 92px; */
+  max-height: 25px;
+  border-radius: 10px;
+  margin: 45px;
+  padding: 35px 20px;
+}
+.monarch h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #F0F2EF;
+  margin: 0;
+}
+.monarch a {
+  text-decoration: none;
+}
+
+/* page 3 */
+.flex-consistent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 20px;
+}
+
+.back-button {
+  /* justify-content: flex-start; */
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.logo-brand img {
+  max-width: 150px;
+}
+
+.eng-dropdown {
+  background-color: #810505;
+  border-radius: 10px;
+  border: #D4AF37 1px solid;
+  padding: 2px 3px !important;
+  height: 20px;
+}
+
+.eng-lang {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  /* align-items: flex-start; */
+  gap: 10px;
+  margin-left: 32px;
+  margin-top: 15px;
+  color: black;
+}
+
+.breadcrumb li {
+  list-style: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: black;
+}
+
+.current {
+  font-weight: 700 !important;
+}
+
+/* menu select */
+.menu-header h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+
+.menu-select-lunch {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.7)), url("../images/kos-default.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.menu-select-lunch h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #F0F2EF;
+  text-align: center;
+}
+.menu-select-lunch p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #F0F2EF;
+  text-align: center;
+}
+.menu-select-lunch a {
+  text-decoration: none;
+}
+
+.menu-select-dinner {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.7)), url("../images/kos-dinner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.menu-select-dinner h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #F0F2EF;
+  text-align: center;
+}
+.menu-select-dinner p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #F0F2EF;
+  text-align: center;
+}
+.menu-select-dinner a {
+  text-decoration: none;
+}
+
+.menu-select-desserts {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.873)), url("../images/kos-dessert.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+.menu-select-desserts h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #F0F2EF;
+  text-align: center;
+}
+.menu-select-desserts p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #F0F2EF;
+  text-align: center;
+}
+.menu-select-desserts a {
+  text-decoration: none;
+}
+
+.menu-blurb {
+  padding: 25px 0;
+}
+
+.groupped {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 7px;
+}
+
+.option-b p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: black;
+  text-align: center;
+}
+
+.monarch-option {
+  border-radius: 10px;
+  border: #810505 5px solid;
+  max-width: 250px;
+  align-items: center;
+  padding: 0 32px;
+}
+.monarch-option h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+.monarch-option a {
+  text-decoration: none;
+}
+
+/* page 4 */
+.lunch-heading h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+
+.menu-headings-parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-headings {
+  background-color: #003844;
+  border-radius: 10px;
+  color: #F0F2EF;
+  max-width: 420px;
+}
+.menu-headings h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #F0F2EF;
+  text-align: center;
+  margin: 0;
+  padding: 5px 150px;
+}
+
+.flex-food-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 316px;
+  background-color: #810505;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #F0F2EF;
+  margin: 10px;
+  text-align: center;
+}
+.card p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #F0F2EF;
+  margin: 10px;
+  text-align: center;
+  max-height: 460px;
+}
+.card h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #F0F2EF;
+  margin: 10px;
+  text-align: center;
+}
+
+.food-wrapper {
+  flex: 1;
+  max-height: 253px;
+}
+
+.food-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.price-and-quantity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}/*# sourceMappingURL=sass_style.css.map */
